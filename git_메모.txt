@@ -1,0 +1,77 @@
+1. git 관련 세미나 준비하기
+
+
+
+git이란 
+소스 코드 버전 관리 시스템
+
+git hub
+git 저장소를 올려서 관리하는 서비스
+
+
+
+버전 관리 시스템에 대하여
+- 작동 방식(틀), 의의
+
+로컬 버전관리
+local VCS - 하나의 PC를 이용해 version을 관리하는 시스템
+
+중앙 집중식 버전관리
+Centralized VCS - 하나의 서버 PC에 version을 관리하는 시스템
+
+분산 버전관리 (git이 해당)
+Distributed VCS - 모든 서버 및 PC에 version을 관리하는 시스템
+- 많은 수의 원격 저장소 (Remote Repository)를 가질 수 있어 문제 해결에 용이함
+
+
+
+git의 2가지 저장소
+
+로컬 저장소 		
+local repo - 컴퓨터 내의 저장소
+
+원격 저장소
+remote repo	- 네트워크 상의 저장소
+
+
+
+git의 3가지 작업 영역
+
+Working Directory 	: 내가 작업하는 프로젝트의 디렉토리
+
+Staging Area		: 커밋을 위해 추가한 파일들이 모여있는 공간
+(=Index) - git add를 한 파일들이 존재
+
+Repository 			: 커밋들이 모여있는 장소
+
+
+
+git 기본 용어 정리(https://sprint.codeit.kr/blog/%EA%B0%9C%EB%B0%9C%EC%9E%90-%ED%95%84%EC%88%98-%EC%A7%80%EC%8B%9D-git%EC%9D%B4-%EB%AD%94%EB%8D%B0)
+
+Repository		: stage에서 대기하는 파일들을 version으로 만들어 저장하는 곳
+
+Working Tree	: 현재 파일 수정, 저장하는 디렉터리(이름 공간)
+
+Head 			: 현재 작업중인 branch
+
+Snapshot		: 특정 시점에서의 파일 폴더등의 상태
+
+Commit			: 변경된 작업 과정들에 대한 점검 후 저장소에 남기는 작업
+
+Checkout 		: 이전 버전 작업으로 이동하는 것
+
+Branch			: Commit 단위로 구분된 분기점
+
+Merge			: 각 Branch내용을 합치는 작업
+
+
+
+
+add		- staging 상에 올리는 명령어
+
+commit
+
+branch 	- 원본을 변경하지 않고 새로운 장소에 코드를 작성하기 위한 명령어
+
+merge
+
