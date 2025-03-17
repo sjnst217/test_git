@@ -8,8 +8,8 @@
             "args": [],
             "stopAtEntry": false,
             "externalConsole": true,
-            "cwd": "c:/Users/RANIX/Documents/최성준 test",
-            "program": "c:/Users/RANIX/Documents/최성준 test/build/Debug/outDebug",
+            "cwd": "c:/Users/RANIX/Documents/sjc_test",
+            "program": "c:/Users/RANIX/Documents/sjc_test/build/Debug/outDebug",
             "MIMode": "gdb",
             "miDebuggerPath": "gdb",
             "setupCommands": [
