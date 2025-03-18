@@ -3,7 +3,7 @@
 int main()
 {
     printf("test diff\n");
-    printf("chagned\n");
+    printf("I will change this line\n");
 
     return 0;
 }
