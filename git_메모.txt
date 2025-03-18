@@ -35,7 +35,7 @@ remote repo	- 네트워크 상의 저장소
 
 
 
-git의 3가지 작업 영역
+git의 3가지 작업 영역 - local repo에 해당
 
 Working Directory 	: 내가 작업하는 프로젝트의 디렉토리
 
@@ -66,6 +66,7 @@ Working Tree	: 현재 파일 수정, 저장하는 디렉터리(이름 공간)
 Head 			: 현재 작업중인 branch
 
 Snapshot		: 특정 시점에서의 파일, 폴더등의 상태
+- 각 version별 각 파일 이라고 생각하면 될듯
 
 Commit			: 변경된 작업 과정들에 대한 점검 후 저장소에 남기는 작업
 
@@ -77,35 +78,74 @@ Merge			: 각 Branch내용을 합치는 작업
 
 
 
-git 기본 명령어 정리
+git 기본 명령어 정리 (https://blog.naver.com/jdusans/222043705693)
+- 이후 헷갈릴때는 git bash에서 git help를 이용할 것
 
+init	: 현재 폴더에 .git 폴더가 생성되고 git 명령어를 사용하도록 함
+- init은 새로운 repo를 만들어 처음부터 코드를 작성할 때,
 
+clone	: 로컬에 원격 저장소를 복사
+- clone은 기존의 repo를 가져와서 코드를 작성할 때 사용하게 됨
+
+status	: 파일에 수정 및 변경이 일어나면 파일의 상태를 보여주는 명령어
+
+log		: 파일의 히스토리를 파악하는 명령어
+
+remote	: 원격의 repo를 로컬에 연결할 때 사용함
+- 다른걸 적지 않을 경우 원격 저장소 목록 확인용
 
 push	: 지역 branch를 원격 branch에 보내기
 
 pull	: 원격 저장소에서 변경 사항을 가져와 현재 브렌치에 합치기
 
-fetch	: origin 저장소에서 합치지 않고 지역 branch로 변경 사항 가져오기 
+fetch   : 원격 repo에서 최신 커밋을 가져와 origin 저장소에서 합치지 않고 지역 branch로 변경 사항 가져오기 
+- pull은 원격에서 로걸 repo로 최신 커밋을 가져오지만, fetch는 다른 branch로 변경한다는 차이가 존재함
 
 add		: stage상에 올리는 명령어
 
 commit	: stage상에 있는 파일을 repo에 작성하기
 
-branch 	: 원본을 변경하지 않고 새로운 장소에 코드를 작성하기
-
-merge	: 다른 branch를 현재 branch에 합치기
-
 checkout: branch 전환, 파일 체크아웃, 커밋으로 돌아가기 등의 용도로 사용
 - branch 전환 용도로는 사용 자제
 
 switch	: branch 전환
+	
+mv		: 파일이나 디렉토리의 이름을 변경하거나 위치를 변환
+
+rm      : 파일 삭제
+
+diff    : 커밋되어있는 최근 버전과 작업 폴더의 수정 파일 사이의 차이를 출력
+
+branch 	: 원본을 변경하지 않고 새로운 장소에 코드를 작성하기, branch 목록 보기
+- git branch는 로컬, git branch -r은 원격 목록을 볼 수 있음
+
+merge	: 다른 branch를 현재 branch에 합치기
+
+rebase  : 두 개의 공통 Base를 가진 branch에서 한 branch의 base를 다른 branch의 최신 커밋으로 base를 옮기는 작업
+- 강제로 push하기 때문에 force-with-lease 옵션 사용 권장
+
+restore : 최근 커밋된 상태로 현재 수정내용을 되돌림
+
+reset   : 과거의 어떤 코드의 commit으로 돌아감
+- 옵션에 hard, soft, mixed가 있어 다 되돌리기, add는 되어있기, add를 해야하는 상태로 변경 가능
+
+revert	: 과거의 어떤 코드의 커밋을 취소
+- git revert commitid 로 해당 커밋아이디에서 일어난 일만 취소
+
+
+echo 	: 화면에 문자를 출력하는 명령어
+- > 나 >>를 이용해서 파일을 생성하면서 내용을 넣을 수도 있음
+
+>		: 이전 내용에 상관없이 새로 쓰는 것
+
+>>		: 기존 내용은 그대로 두고 그 위에 추가 하는 것
 
 
 
 
 
-
-
+.gitignore	: git에서 관리하지 못하게 하는것
+- 파일에 제외할 폴더 명을 적어주면 git에서 제외됨 
 
 
 진행상황
@@ -118,8 +158,34 @@ git commit
 
 git push
 
+.gitignore
 
 
 
+해볼거
 
-
+git mv
+- 파일명 or 위치 변경
+git rm
+- 파일 삭제
+git diff
+- 이전 커밋과 다른 점 찾기
+git fetch
+- 원격 repo의 최신 커밋을 다른 branch로 가져오기
+git reset
+- 옛날 커밋으로 돌어가기
+git restore
+- 최근 커밋으로 내용 돌리기
+git clone
+- 원격 repo를 가져옴
+git branch
+- branch 목록보기 or 새로운 branch 만들기
+git merge
+- ff, non-ff, 3way 해보기
+git rebase
+- 하나의 base에서 여러 branch를 작성하여 합쳐보기
+- 문제점 생기는 부분 해보기
+git switch
+- branch 전환
+git checkout
+- branch 전환, 옛날 branch로 head변경하기
