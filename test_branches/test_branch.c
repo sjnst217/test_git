@@ -37,7 +37,8 @@ void modi_any()
 int main()
 {
     test_branch();
-
+    modi2();
+    
     return 0;
 }
 
