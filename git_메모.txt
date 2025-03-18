@@ -110,7 +110,8 @@ checkout: branch 전환, 파일 체크아웃, 커밋으로 돌아가기 등의 �
 
 switch	: branch 전환
 	
-mv		: 파일이나 디렉토리의 이름을 변경하거나 위치를 변환
+mv		: 파일이나 디렉토리의 이름을 변경하거나 파일의 폴더 위치를 변환
+- 위치 변경은 폴더2폴더만 가능한듯
 
 rm      : 파일 삭제
 
@@ -160,22 +161,22 @@ git push
 
 .gitignore
 
-
-
-해볼거
-
 git mv
 - 파일명 or 위치 변경
 git rm
 - 파일 삭제
 git diff
 - 이전 커밋과 다른 점 찾기
-git fetch
-- 원격 repo의 최신 커밋을 다른 branch로 가져오기
 git reset
 - 옛날 커밋으로 돌어가기
 git restore
 - 최근 커밋으로 내용 돌리기
+
+
+해볼거
+
+git fetch
+- 원격 repo의 최신 커밋을 다른 branch로 가져오기
 git clone
 - 원격 repo를 가져옴
 git branch
