@@ -10,6 +10,11 @@ void test_branch2()
     printf("I will mke second branch\n");
 }
 
+void modi2()
+{
+    printf("check bran2");
+}
+
 
 int main()
 {
