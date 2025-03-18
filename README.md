@@ -14,6 +14,7 @@ git push
 
 git mv
 - 파일명 or 위치 변경
+
 git rm
 - 파일 삭제
 
