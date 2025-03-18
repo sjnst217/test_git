@@ -12,6 +12,8 @@ void modi_any()
     printf("%d\n", a);
 }
 
+// 이건 fetch를 위한 거야
+
 int main()
 {
     test_branch();
