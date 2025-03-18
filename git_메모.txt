@@ -171,16 +171,17 @@ git reset
 - 옛날 커밋으로 돌어가기
 git restore
 - 최근 커밋으로 내용 돌리기
-
-
-해볼거
-
 git fetch
 - 원격 repo의 최신 커밋을 다른 branch로 가져오기
+- 소스제어 부분에서 다른점이 무엇인지 볼 수 있지만 실질적으로 변하는 부분은 없음
 git clone
 - 원격 repo를 가져옴
 git branch
 - branch 목록보기 or 새로운 branch 만들기
+
+해볼거
+
+
 git merge
 - ff, non-ff, 3way 해보기
 git rebase
