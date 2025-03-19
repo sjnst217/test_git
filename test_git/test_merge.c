@@ -18,7 +18,16 @@ double gcd(double a, double b);
 
 int main()
 {
+    double a, b = 0.0;
 
+    a = 14;
+    b = 6;
+
+    printf("%d + %d = %d", a, b, add(a, b));
+    printf("%d - %d = %d", a, b, sub(a, b));
+    printf("%d * %d = %d", a, b, mul(a, b));
+    printf("%d / %d = %d", a, b, div(a, b));
+    printf("gcd(%d, %d) = %d", a, b, gcd(a, b));
 
     return 0;
 }
