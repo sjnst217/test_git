@@ -23,6 +23,15 @@ double mul(double a, double b)
     return mul_res;
 }
 
+double divi(double a, double b)
+{
+    double divi_res = 0.0;
+
+    divi_res = a / b;
+
+    return divi_res;    
+}
+
 int main()
 {
 
