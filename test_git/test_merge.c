@@ -16,6 +16,15 @@ double div(double a, double b);
 // 개발자 3
 double gcd(double a, double b);
 
+double add(double a, double b)
+{
+    double add_res = 0;
+
+    add_res = a + b;
+
+    return add_res;
+}
+
 int main()
 {
 
