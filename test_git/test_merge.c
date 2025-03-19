@@ -25,6 +25,15 @@ double add(double a, double b)
     return add_res;
 }
 
+double sub(double a, double b)
+{
+    double sub_res = 0;
+
+    sub_res = a - b;
+
+    return sub_res;
+}
+
 int main()
 {
 
