@@ -24,7 +24,7 @@ int main()
     printf("%lf + %lf = %lf", a, b, add(a, b));
     printf("%lf - %lf = %lf", a, b, sub(a, b));
     printf("%lf * %lf = %lf", a, b, mul(a, b));
-    printf("%lf / %lf = %lf", a, b, div(a, b));
+    printf("%lf / %lf = %lf", a, b, divi(a, b));
     printf("gcd(%d, %d) = %d", (int)a, (int)b, gcd((int)a, (int)b));
 
     return 0;
