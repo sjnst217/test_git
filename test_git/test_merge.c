@@ -34,7 +34,13 @@ double divi(double a, double b)
 
 int main()
 {
+    double a, b = 0.0;
 
+    a = 14;
+    b = 6;
+
+    printf("%lf * %lf = %lf\n", a, b, mul(a, b));
+    printf("%lf / %lf = %lf\n", a, b, divi(a, b));
 
     return 0;
 }
