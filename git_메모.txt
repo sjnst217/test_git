@@ -177,6 +177,12 @@ git restore
 git fetch
 - 원격 repo의 최신 커밋을 다른 branch로 가져오기
 - 소스제어 부분에서 다른점이 무엇인지 볼 수 있지만 실질적으로 변하는 부분은 없음
+
+
+해볼거
+
+git fetch
+- 원격 repo의 최신 커밋을 다른 branch로 가져오기
 git clone
 - 원격 repo를 가져옴
 git branch

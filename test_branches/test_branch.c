@@ -32,8 +32,6 @@ void modi_any()
     printf("%d\n", a);
 }
 
-// 이건 bran1이고
-
 int main()
 {
     test_branch();
