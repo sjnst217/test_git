@@ -14,6 +14,36 @@ double divi(double a, double b);
 // 개발자 3
 int gcd(int a, int b);
 
+double mul(double a, double b)
+{
+    double mul_res = 0.0;
+
+    mul_res = a * b;
+
+    return mul_res;
+}
+
+double divi(double a, double b)
+{
+    double divi_res = 0.0;
+
+    divi_res = a / b;
+
+    return divi_res;    
+}
+
+int gcd(int a, int b)
+{
+    if(b == 0)
+    {
+        return a;
+    }
+    else
+    {
+        return  gcd(b, (a % b));
+    }
+}
+
 int main()
 {
     double a, b = 0.0;
@@ -21,11 +51,11 @@ int main()
     a = 14;
     b = 6;
 
-    printf("%lf + %lf = %lf", a, b, add(a, b));
-    printf("%lf - %lf = %lf", a, b, sub(a, b));
-    printf("%lf * %lf = %lf", a, b, mul(a, b));
-    printf("%lf / %lf = %lf", a, b, divi(a, b));
-    printf("gcd(%d, %d) = %d", (int)a, (int)b, gcd((int)a, (int)b));
+    printf("%lf + %lf = %lf\n", a, b, add(a, b));
+    printf("%lf - %lf = %lf\n", a, b, sub(a, b));
+    printf("%lf * %lf = %lf\n", a, b, mul(a, b));
+    printf("%lf / %lf = %lf\n", a, b, divi(a, b));
+    printf("gcd(%d, %d) = %d\n", (int)a, (int)b, gcd((int)a, (int)b));
 
     return 0;
 }
