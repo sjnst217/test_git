@@ -12,7 +12,7 @@ double mul(double a, double b);
 double divi(double a, double b);
 
 // 개발자 3
-double gcd(double a, double b);
+int gcd(int a, int b);
 
 int main()
 {
@@ -25,7 +25,7 @@ int main()
     printf("%lf - %lf = %lf", a, b, sub(a, b));
     printf("%lf * %lf = %lf", a, b, mul(a, b));
     printf("%lf / %lf = %lf", a, b, div(a, b));
-    printf("gcd(%lf, %lf) = %lf", a, b, gcd(a, b));
+    printf("gcd(%d, %d) = %d", (int)a, (int)b, gcd((int)a, (int)b));
 
     return 0;
 }
