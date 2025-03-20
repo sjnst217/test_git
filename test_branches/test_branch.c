@@ -14,6 +14,11 @@ void test_revert(){
     return 0;
 }
 
+void test_stash2()
+{
+    printf("test stash 2\n");
+}
+
 int main()
 {
     test_branch();
