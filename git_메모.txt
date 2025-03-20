@@ -129,7 +129,19 @@ merge	: 다른 branch를 현재 branch에 합치기
 rebase  : 두 개의 공통 Base를 가진 branch에서 한 branch의 base를 다른 branch의 최신 커밋으로 base를 옮기는 작업
 - 강제로 push하기 때문에 force-with-lease 옵션 사용 권장
 
+cherry-pick	: 특정 커밋을 선택하여 현재 브랜치에 적용
+- rebase와 근본적으로 비슷하지만, rebase는 모두 최신이여야 한다면 cherry-pick은 옛날의 branch라고
+하더라도 내가 원하는 branch에 가져올 수 있다는 장점이 존재함.
+- 결국 cherry-pick은 commit 하나만 rebase 한다고 생각하면 됨.
+- 다른 사람의 커밋 중 일부를 가져오는 경우에 주로 사용.
+
+rebase와 cherry-pick 차이점 설명 링크 - (https://yoongrammer.tistory.com/25)
+
 restore : 최근 커밋된 상태로 현재 수정내용을 되돌림
+- git reset (HEAD~1) 은 현재 가르키는 commit을 1개 돌리기
+- git restore filename 은 staging도 하지 않은 그냥 잘못 작성한 파일의 수정 상태를 최근 커밋으로 되돌림
+이게 차이점.
+
 
 reset   : 과거의 어떤 코드의 commit으로 돌아감
 - 옵션에 hard, soft, mixed가 있어 다 되돌리기, add는 되어있기, add를 해야하는 상태로 변경 가능
@@ -142,7 +154,10 @@ revert	: 과거의 어떤 코드의 커밋을 취소
 - 없앴다는 사실이 commit에 남음
 - push된 상태일때 commit 취소시 사용
 
-chrry-pick	: 특정 커밋을 선택하여 현재 브랜치에 적용
+
+stash 		: 어떤 작업을 하던 중 완료하지 않고(commit하지 않고) 다른 브랜치로 가야 할 때 stack에 잠시 올려두는것 
+- 즉 하던 작업 임시로 저장하기
+
 
 
 echo 	: 화면에 문자를 출력하는 명령어
@@ -168,6 +183,10 @@ Topic
 - 어떤 한 가지 주제나 작업을 위해 만든 브랜치
 
 
+
+Pull Request	: 한 브랜치에서 다른 브랜치로 변경 사항을 병합하는것을 제안하는 과정
+- 결국 여러 사람이 협엽하는 환경에서, 원류(main)에서 새로운 작업을 하기 위해 branch를 따서 가져가 코드를 만들었으면,
+그 코드를 합쳐도 되는지 github내에서 물어볼 수 있는 github의 기능이라고 생각하면 될듯
 
 
 
@@ -216,4 +235,28 @@ git merge
 git rebase
 - 하나의 base에서 여러 branch를 작성하여 합쳐보기
 - 문제점 생기는 부분 해보기
+git cherry-pick
+
+git stash
+- 
+
+
+
+
+다른 작업 영역으로 옮기기
+- add, commit, push, pull, clone, fetch
+
+branch 관련
+- branch, switch, checkout, merge, rebase
+
+이전으로 돌아가기
+- reset, revert, restore, cherry-pick
+
+etc.
+- mv, rm, diff
+
+
+
+
+
 
