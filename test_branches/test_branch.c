@@ -24,6 +24,8 @@ void test_stash2()
     printf("test stash 2\n");
 }
 
+// 이건 되겠짓짓
+
 int main()
 {
     test_branch();
