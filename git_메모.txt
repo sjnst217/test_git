@@ -120,7 +120,10 @@ mv		: 파일이나 디렉토리의 이름을 변경하거나 파일의 폴더 �
 rm      : 파일 삭제
 
 diff    : 커밋되어있는 최근 버전과 작업 폴더의 수정 파일 사이의 차이를 출력
-
+- git diff 		: W <-> S
+- git diff HEAD : W, S <-> R
+라고 보면 됨
+ 
 branch 	: 원본을 변경하지 않고 새로운 장소에 코드를 작성하기, branch 목록 보기
 - git branch는 로컬, git branch -r은 원격 목록을 볼 수 있음
 
@@ -157,8 +160,11 @@ revert	: 과거의 어떤 코드의 커밋을 취소
 
 stash 		: 어떤 작업을 하던 중 완료하지 않고(commit하지 않고) 다른 브랜치로 가야 할 때 stack에 잠시 올려두는것 
 - 즉 하던 작업 임시로 저장하기
-
-
+git stash list 	: 목록 확인하기
+git stash apply	: 최근의 stash 가져오기
+git stash drop	: stash 제거하기
+git stash pop 	: drop + apply
+git stash-unapply : git상에는 존재하지 않는 명령어, apply된 코드를 다시 stack으로 올림
 
 echo 	: 화면에 문자를 출력하는 명령어
 - > 나 >>를 이용해서 파일을 생성하면서 내용을 넣을 수도 있음
@@ -226,7 +232,10 @@ git switch
 git checkout
 - branch 전환, 옛날 branch로 head변경하기
 - working directory에 있는 특정 파일을 옛날 commit으로 돌아가기
-	- 이건 결국 현재 수정 사항이 이상해서 바로 전 commit으로 돌아가는 느
+	- 이건 결국 현재 수정 사항이 이상해서 바로 전 commit으로 돌아가는 느낌
+git stash
+- commit을 하고싶지 않은데 다른 branch로 옮겨야 할 때 stack에 코드를 올려놓는 것
+
 
 해볼거
 
@@ -237,14 +246,11 @@ git rebase
 - 문제점 생기는 부분 해보기
 git cherry-pick
 
-git stash
-- 
-
 
 
 
 다른 작업 영역으로 옮기기
-- add, commit, push, pull, clone, fetch
+- add, commit, push, pull, clone, fetch, stash
 
 branch 관련
 - branch, switch, checkout, merge, rebase
@@ -254,6 +260,34 @@ branch 관련
 
 etc.
 - mv, rm, diff
+
+
+
+
+github 다른 계정 쓰고 싶으면
+
+자격 증명 관리자 -> Windows 자격 증명 -> github 사이트 아이디 비번 바꾸기
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
