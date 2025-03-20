@@ -14,10 +14,17 @@ void test_revert(){
     return 0;
 }
 
+void test_stash()
+{
+    printf("test stash\n");
+}
+
 void test_stash2()
 {
     printf("test stash 2\n");
 }
+
+// 이건 되겠짓짓
 
 int main()
 {
