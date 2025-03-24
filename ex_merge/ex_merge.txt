@@ -1,5 +1,7 @@
 example of merge
 
+ex merge 브랜치에서 3번 라인을 변경했어요.
+
 
 
 main 브랜치에서는 5번줄을 변경했어요.
