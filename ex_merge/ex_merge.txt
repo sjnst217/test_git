@@ -1,1 +1,3 @@
 example of merge
+
+ex merge 브랜치에서 3번 라인을 변경했어요.
