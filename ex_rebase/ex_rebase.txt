@@ -1,1 +1,3 @@
 example of rebase
+
+ex_rebase에서 3번 line을 변경.
