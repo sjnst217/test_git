@@ -10,10 +10,6 @@ void test_branch2()
     printf("I will mke second branch\n");
 }
 
-void test_revert(){
-    return 0;
-}
-
 void test_stash()
 {
     printf("test stash\n");
